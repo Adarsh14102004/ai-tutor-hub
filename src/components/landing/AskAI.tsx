@@ -14,7 +14,7 @@ interface Message {
 
 const WEBHOOK_URL =
   (import.meta.env.VITE_N8N_WEBHOOK_URL as string | undefined) ??
-  "https://senadarsh.app.n8n.cloud/webhook-test/e91418cc-23af-4e7c-a670-0d504aed71b1";
+  "https://senadarsh.app.n8n.cloud/webhook/e91418cc-23af-4e7c-a670-0d504aed71b1";
 
 function extractAnswer(data: unknown): string {
   if (typeof data === "string") return data;
